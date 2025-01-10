@@ -1,6 +1,7 @@
 package com.nttdata.ct.stepDefinitions;
 
 import com.nttdata.ct.questions.LoginSuccess;
+import com.nttdata.ct.questions.Message;
 import com.nttdata.ct.task.Login;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -33,5 +34,10 @@ public class LoginSwagLabs {
         );
     }
 
-
+    @Then("se muestra el mensaje {string}")
+    public void se_muestra_el_mensaje(String message) {
+        theActorInTheSpotlight().should(
+                seeThat("El mensaje de error", Message.error(), equalTo(message))
+        );
+    }
 }

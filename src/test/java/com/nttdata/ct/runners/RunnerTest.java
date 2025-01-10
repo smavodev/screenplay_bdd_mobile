@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"json:target/build/cucumber.json", "html:target/build/cucumber-report.html"},
         features = {"src/test/resources/features"},
         glue = {"com.nttdata.ct.stepDefinitions", "com.nttdata.ct.hooks"},
-        tags = "@Login_exitoso")
+        tags = "@login")
 
 public class RunnerTest {
 

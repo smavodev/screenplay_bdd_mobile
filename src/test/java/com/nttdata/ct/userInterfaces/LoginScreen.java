@@ -17,5 +17,8 @@ public class LoginScreen {
             .locatedForAndroid(AppiumBy.xpath("//android.view.ViewGroup[@content-desc=\"test-LOGIN\"]"))
             .locatedForIOS(AppiumBy.xpath("X"));
 
+    public static final Target LBL_ERROR_MESSAGE = Target.the("Mensaje de error")
+            .locatedForAndroid(AppiumBy.xpath("//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView"))
+            .locatedForIOS(AppiumBy.xpath("X"));
 
 }
