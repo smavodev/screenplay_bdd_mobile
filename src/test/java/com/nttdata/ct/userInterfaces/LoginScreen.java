@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class LoginScreen {
 
-    public static final Target TXT_USER = Target.the("Campo usuario")
+    public static final Target TXT_USERNAME = Target.the("Campo usuario")
             .locatedForAndroid(AppiumBy.xpath("//android.widget.EditText[@content-desc=\"test-Username\"]"))
             .locatedForIOS(AppiumBy.xpath("//XCUIElementTypeTextField[@name=\"test-Username\"]"));
 
